@@ -1,5 +1,5 @@
 <?php
-namespace wdst\YiiJsonRPCClient;
+namespace wdst\IcrObj;
 use JsonRPC\Client as JsonRPCClient;
 
 Class JsonModel extends AbstractDataModel{

@@ -1,5 +1,5 @@
 <?php
-namespace wdst\YiiJsonRPCClient;
+namespace wdst\IcrObj;
 
 abstract class AbstractDataModel{
 

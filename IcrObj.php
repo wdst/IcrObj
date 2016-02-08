@@ -1,6 +1,6 @@
 <?php
 
-namespace wdst\YiiJsonRPCClient;
+namespace wdst\IcrObj;
 /**
  * Description of IcrObj
  *
