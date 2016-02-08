@@ -24,6 +24,8 @@ class IcrObj {
 
     public $Model;
 
+    public $responce;
+
     public function __construct(AbstractDataModel $Model, $session_guid, $type_code, $object_id = null)
     {
         $this->type_code = $type_code;
@@ -37,7 +39,7 @@ class IcrObj {
             $this->action = 'U';
         }
     }
-    
+
     public function setAttr($attr, $value = null)
     {
         if(is_array($attr) && is_null($value)){
@@ -65,6 +67,8 @@ class IcrObj {
             'attr_value' => $this->attr_value
         ];
 
-        return $this->Model->object($obj);
+        $this->responce = $this->Model->object($obj);
+
+        return $this->responce;
     }
 }
