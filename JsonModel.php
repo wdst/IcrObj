@@ -8,6 +8,11 @@ Class JsonModel extends AbstractDataModel{
         $this->client = new JsonRPCClient($url, $timeout, $headers);
     }
     
+    public function getClient()
+    {
+        return $this->client;
+    }
+    
     function save(){
 
     }

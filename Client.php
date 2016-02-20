@@ -28,6 +28,11 @@ class Client extends Component{
         $this->Model = new JsonModel($this->url);
     }
 
+    public function getClient()
+    {
+        return $this->Model->getClient();
+    }
+    
     public function getObj($type_code, $object_id = null)
     {
         $this->Model = new JsonModel($this->url);
